@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Música, conócela más a fondo</title>
+    <style>
+        body {
+            font-family: Calibri, sans-serif;
+            margin: 5px;
+            padding: 5px;
+            background-color: #5E99F3;
+            color: #333;
+        }
+        header {
+            background-color: #83B9EF;
+            color: black;
+            padding: 25px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            background-color: #333;
+        }
+        nav a {
+            color: blue;
+            padding: 15px 25px;
+            text-decoration: none;
+            text-align: center;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .content {
+            padding: 25px;
+        }
+        .section {
+            margin: 25px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Música, conoce todo sobre ella</h1>
+    </header>
+    <nav>
+        <a class="enlace" href="index.html">Historia</a>
+        <a class="enlace" href="generos de musica.html">Géneros</a>
+        <a class="enlace" href="beneficios de la musica.html">Beneficios</a>
+        <a class="enlace" href="caracteristicas de la musica.html">Características</a>
+        <a class="enlace" href="fechas.html">Fechas de Conciertos</a>
+        <a class="enlace" href="recursos.html">Recursos Educativos</a>
+        <a class="enlace" href="biografias.html">Biografías de Artistas</a>
+        <a class="enlace" href="noticias.html">Noticias</a>
+        <a class="enlace" href="recomendaciones.html">Recomendaciones Musicales</a>
+        <a class="enlace" href="reseñas.html">Reseñas de Álbumes</a>
+        <a class="enlace" href="rumores.html">Rumores Musicales</a>
+        <a class="enlace" href="top.html">TOP 50 Canciones</a>
+        <a class="enlace" href="contactos.html">Contacto</a>
+        <a class="enlace" href="instrumentos.html">Instrumentos Musicales</a>
+        <a class="enlace" href="teoria.html">Teoría Musical</a>
+        <a class="enlace" href="playlists.html">Playlists</a>
+        
+    </nav>
+    <div class="content">
+        <!-- Contenido de la página -->
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rumores Musicales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .rumor {
+            padding: 20px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Últimos Rumores Musicales</h1>
+    <div id="rumores">
+        <div class="rumor">Rumor 1: Se espera que la banda Artic Monkeys lance un nuevo álbum este verano.</div>
+        <div class="rumor">Rumor 2: Melanie MArtinez podría estar colaborando con Twenty one pilots en un nuevo sencillo.</div>
+        <div class="rumor">Rumor 3: La gira mundial de Taylor Swift podría ser cancelada.</div>
+        <div class="rumor">Rumor 4: Badbunny podría reunirse para un concierto especial.</div>
+        <div class="rumor">Rumor 5: Se rumorea que Jbalvin está trabajando en un álbum conceptual.</div>
+        <div class="rumor">Rumor 6: Pal Norte podría anunciar un cartel sorpresa.</div>
+        <div class="rumor">Rumor 7: Peso Pluma podría cambiar de género musical en su próximo álbum.</div>
+        <div class="rumor">Rumor 8: Los bunkers podría lanzar una edición especial de su álbum clásico.</div>
+        <div class="rumor">Rumor 9: Los angeles azules podría estar planeando una colaboración internacional.</div>
+        <div class="rumor">Rumor 10: Se especula que Junior H está preparando un documental sobre su carrera.</div>
+    </div>
+
+    <script>
+        function getRandomColor() {
+            const letters = '0123456789ABCDEF';
+            let color = '#';
+            for (let i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+            }
+            return color;
+        }
+
+        function changeColors() {
+            const rumores = document.querySelectorAll('.rumor');
+            rumores.forEach(rumor => {
+                rumor.style.backgroundColor = getRandomColor();
+            });
+        }
+
+        setInterval(changeColors, 2000);
+    </script>
+</body>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Barra Inferior</title>
+    <style>
+        .footer-bar {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer-bar">
+        Creado por Darío Lagunas Centeno y Frida Sofia Mariano Rodríguez
+    </div>
+</body>
+</html>
